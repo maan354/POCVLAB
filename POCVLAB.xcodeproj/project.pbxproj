@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C4DE806D1F82BD53002766B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE806C1F82BD53002766B4 /* AppDelegate.swift */; };
+		C4DE806F1F82BD53002766B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE806E1F82BD53002766B4 /* ViewController.swift */; };
+		C4DE80721F82BD53002766B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DE80701F82BD53002766B4 /* Main.storyboard */; };
+		C4DE80741F82BD53002766B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DE80731F82BD53002766B4 /* Assets.xcassets */; };
+		C4DE80771F82BD53002766B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4DE80751F82BD53002766B4 /* LaunchScreen.storyboard */; };
+		C4DE80821F82BD53002766B4 /* POCVLABTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE80811F82BD53002766B4 /* POCVLABTests.swift */; };
+		C4DE808D1F82BD54002766B4 /* POCVLABUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DE808C1F82BD54002766B4 /* POCVLABUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4DE807E1F82BD53002766B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DE80611F82BD53002766B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DE80681F82BD53002766B4;
+			remoteInfo = POCVLAB;
+		};
+		C4DE80891F82BD53002766B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4DE80611F82BD53002766B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4DE80681F82BD53002766B4;
+			remoteInfo = POCVLAB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C4DE80691F82BD53002766B4 /* POCVLAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCVLAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE806C1F82BD53002766B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4DE806E1F82BD53002766B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4DE80711F82BD53002766B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4DE80731F82BD53002766B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4DE80761F82BD53002766B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4DE80781F82BD53002766B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DE807D1F82BD53002766B4 /* POCVLABTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCVLABTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE80811F82BD53002766B4 /* POCVLABTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCVLABTests.swift; sourceTree = "<group>"; };
+		C4DE80831F82BD53002766B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4DE80881F82BD53002766B4 /* POCVLABUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCVLABUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE808C1F82BD54002766B4 /* POCVLABUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCVLABUITests.swift; sourceTree = "<group>"; };
+		C4DE808E1F82BD54002766B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4DE80661F82BD53002766B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE807A1F82BD53002766B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE80851F82BD53002766B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C4DE80601F82BD53002766B4 = {
+			isa = PBXGroup;
+			children = (
+				C4DE806B1F82BD53002766B4 /* POCVLAB */,
+				C4DE80801F82BD53002766B4 /* POCVLABTests */,
+				C4DE808B1F82BD54002766B4 /* POCVLABUITests */,
+				C4DE806A1F82BD53002766B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4DE806A1F82BD53002766B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE80691F82BD53002766B4 /* POCVLAB.app */,
+				C4DE807D1F82BD53002766B4 /* POCVLABTests.xctest */,
+				C4DE80881F82BD53002766B4 /* POCVLABUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4DE806B1F82BD53002766B4 /* POCVLAB */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE806C1F82BD53002766B4 /* AppDelegate.swift */,
+				C4DE806E1F82BD53002766B4 /* ViewController.swift */,
+				C4DE80701F82BD53002766B4 /* Main.storyboard */,
+				C4DE80731F82BD53002766B4 /* Assets.xcassets */,
+				C4DE80751F82BD53002766B4 /* LaunchScreen.storyboard */,
+				C4DE80781F82BD53002766B4 /* Info.plist */,
+			);
+			path = POCVLAB;
+			sourceTree = "<group>";
+		};
+		C4DE80801F82BD53002766B4 /* POCVLABTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE80811F82BD53002766B4 /* POCVLABTests.swift */,
+				C4DE80831F82BD53002766B4 /* Info.plist */,
+			);
+			path = POCVLABTests;
+			sourceTree = "<group>";
+		};
+		C4DE808B1F82BD54002766B4 /* POCVLABUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4DE808C1F82BD54002766B4 /* POCVLABUITests.swift */,
+				C4DE808E1F82BD54002766B4 /* Info.plist */,
+			);
+			path = POCVLABUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4DE80681F82BD53002766B4 /* POCVLAB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DE80911F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLAB" */;
+			buildPhases = (
+				C4DE80651F82BD53002766B4 /* Sources */,
+				C4DE80661F82BD53002766B4 /* Frameworks */,
+				C4DE80671F82BD53002766B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POCVLAB;
+			productName = POCVLAB;
+			productReference = C4DE80691F82BD53002766B4 /* POCVLAB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4DE807C1F82BD53002766B4 /* POCVLABTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DE80941F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLABTests" */;
+			buildPhases = (
+				C4DE80791F82BD53002766B4 /* Sources */,
+				C4DE807A1F82BD53002766B4 /* Frameworks */,
+				C4DE807B1F82BD53002766B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DE807F1F82BD53002766B4 /* PBXTargetDependency */,
+			);
+			name = POCVLABTests;
+			productName = POCVLABTests;
+			productReference = C4DE807D1F82BD53002766B4 /* POCVLABTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4DE80871F82BD53002766B4 /* POCVLABUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4DE80971F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLABUITests" */;
+			buildPhases = (
+				C4DE80841F82BD53002766B4 /* Sources */,
+				C4DE80851F82BD53002766B4 /* Frameworks */,
+				C4DE80861F82BD53002766B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4DE808A1F82BD53002766B4 /* PBXTargetDependency */,
+			);
+			name = POCVLABUITests;
+			productName = POCVLABUITests;
+			productReference = C4DE80881F82BD53002766B4 /* POCVLABUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4DE80611F82BD53002766B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = NDIAYE;
+				TargetAttributes = {
+					C4DE80681F82BD53002766B4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AY4QU2UEP6;
+						ProvisioningStyle = Automatic;
+					};
+					C4DE807C1F82BD53002766B4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AY4QU2UEP6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4DE80681F82BD53002766B4;
+					};
+					C4DE80871F82BD53002766B4 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = AY4QU2UEP6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C4DE80681F82BD53002766B4;
+					};
+				};
+			};
+			buildConfigurationList = C4DE80641F82BD53002766B4 /* Build configuration list for PBXProject "POCVLAB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4DE80601F82BD53002766B4;
+			productRefGroup = C4DE806A1F82BD53002766B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4DE80681F82BD53002766B4 /* POCVLAB */,
+				C4DE807C1F82BD53002766B4 /* POCVLABTests */,
+				C4DE80871F82BD53002766B4 /* POCVLABUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4DE80671F82BD53002766B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DE80771F82BD53002766B4 /* LaunchScreen.storyboard in Resources */,
+				C4DE80741F82BD53002766B4 /* Assets.xcassets in Resources */,
+				C4DE80721F82BD53002766B4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE807B1F82BD53002766B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE80861F82BD53002766B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4DE80651F82BD53002766B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DE806F1F82BD53002766B4 /* ViewController.swift in Sources */,
+				C4DE806D1F82BD53002766B4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE80791F82BD53002766B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DE80821F82BD53002766B4 /* POCVLABTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4DE80841F82BD53002766B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DE808D1F82BD54002766B4 /* POCVLABUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4DE807F1F82BD53002766B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DE80681F82BD53002766B4 /* POCVLAB */;
+			targetProxy = C4DE807E1F82BD53002766B4 /* PBXContainerItemProxy */;
+		};
+		C4DE808A1F82BD53002766B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4DE80681F82BD53002766B4 /* POCVLAB */;
+			targetProxy = C4DE80891F82BD53002766B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4DE80701F82BD53002766B4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DE80711F82BD53002766B4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4DE80751F82BD53002766B4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4DE80761F82BD53002766B4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4DE808F1F82BD54002766B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4DE80901F82BD54002766B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4DE80921F82BD54002766B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLAB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C4DE80931F82BD54002766B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLAB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLAB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C4DE80951F82BD54002766B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLABTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLABTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCVLAB.app/POCVLAB";
+			};
+			name = Debug;
+		};
+		C4DE80961F82BD54002766B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLABTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLABTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCVLAB.app/POCVLAB";
+			};
+			name = Release;
+		};
+		C4DE80981F82BD54002766B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLABUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLABUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = POCVLAB;
+			};
+			name = Debug;
+		};
+		C4DE80991F82BD54002766B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = AY4QU2UEP6;
+				INFOPLIST_FILE = POCVLABUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = maan.POCVLABUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = POCVLAB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4DE80641F82BD53002766B4 /* Build configuration list for PBXProject "POCVLAB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DE808F1F82BD54002766B4 /* Debug */,
+				C4DE80901F82BD54002766B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4DE80911F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLAB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DE80921F82BD54002766B4 /* Debug */,
+				C4DE80931F82BD54002766B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4DE80941F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLABTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DE80951F82BD54002766B4 /* Debug */,
+				C4DE80961F82BD54002766B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C4DE80971F82BD54002766B4 /* Build configuration list for PBXNativeTarget "POCVLABUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4DE80981F82BD54002766B4 /* Debug */,
+				C4DE80991F82BD54002766B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4DE80611F82BD53002766B4 /* Project object */;
+}

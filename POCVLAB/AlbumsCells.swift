@@ -10,9 +10,15 @@ import UIKit
 
 class AlbumsCells: UITableViewCell {
 
+    @IBOutlet weak var getPhotoButton: UIButton!
+    @IBOutlet weak var titleAlbumLabel: UILabel!
+    @IBOutlet weak var panelView: UIView!
+    @IBOutlet weak var artiste: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.panelView.layer.borderWidth = 1
+        self.panelView.layer.borderColor = UIColor(rgb: 0xE6E6E6).cgColor
+        self.panelView.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -1,9 +1,9 @@
 //
-//  Services.swift
-//  Cognac
+//  PostVC.swift
+//  POCVLAB
 //
-//  Created by Anis KEDIDI on 09/02/2017.
-//  Copyright © 2017 IBM. All rights reserved.
+//  Created by NDIAYE on 02/10/2017.
+//  Copyright © 2017 NDIAYE. All rights reserved.
 //
 
 import Foundation
@@ -17,6 +17,5 @@ class Services {
     // Accès aux données
     let  dataAccess: DataAccess = DataAccess()
     
-    var stackBarSettings = StackBarSettings()
 
 }

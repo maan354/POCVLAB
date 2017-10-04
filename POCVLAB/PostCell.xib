@@ -1,19 +1,98 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PostCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="133" id="KGk-i7-Jjw" customClass="PostCell" customModule="POCVLAB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="133"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YTe-we-ypo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="132.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOE-6N-LZe">
+                                <rect key="frame" x="8" y="27" width="304" height="14.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc1-pJ-ZgS">
+                                <rect key="frame" x="8" y="49.5" width="304" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6XH-ii-LFs">
+                                <rect key="frame" x="8" y="73" width="304" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr5-6N-3nv">
+                                <rect key="frame" x="0.0" y="131" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4v0-j1-xvH">
+                                <rect key="frame" x="8" y="8" width="304" height="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pc1-pJ-ZgS" firstAttribute="leading" secondItem="zOE-6N-LZe" secondAttribute="leading" id="AOi-Ai-F3q"/>
+                            <constraint firstItem="Pc1-pJ-ZgS" firstAttribute="top" secondItem="zOE-6N-LZe" secondAttribute="bottom" constant="8" id="BoF-hw-DOJ"/>
+                            <constraint firstAttribute="bottom" secondItem="hr5-6N-3nv" secondAttribute="bottom" id="KAU-y9-3hR"/>
+                            <constraint firstItem="6XH-ii-LFs" firstAttribute="trailing" secondItem="Pc1-pJ-ZgS" secondAttribute="trailing" id="Lyc-lI-Dlk"/>
+                            <constraint firstItem="6XH-ii-LFs" firstAttribute="leading" secondItem="Pc1-pJ-ZgS" secondAttribute="leading" id="OSR-0t-xjl"/>
+                            <constraint firstItem="4v0-j1-xvH" firstAttribute="leading" secondItem="YTe-we-ypo" secondAttribute="leading" constant="8" id="PKR-rU-YWk"/>
+                            <constraint firstItem="hr5-6N-3nv" firstAttribute="top" secondItem="6XH-ii-LFs" secondAttribute="bottom" constant="8" id="SpZ-h5-lik"/>
+                            <constraint firstItem="zOE-6N-LZe" firstAttribute="top" secondItem="4v0-j1-xvH" secondAttribute="bottom" constant="7" id="Tya-v4-xqX"/>
+                            <constraint firstItem="hr5-6N-3nv" firstAttribute="leading" secondItem="YTe-we-ypo" secondAttribute="leading" id="bZG-By-2Gm"/>
+                            <constraint firstItem="zOE-6N-LZe" firstAttribute="trailing" secondItem="4v0-j1-xvH" secondAttribute="trailing" id="dh1-Eq-TRC"/>
+                            <constraint firstAttribute="bottom" secondItem="6XH-ii-LFs" secondAttribute="bottom" constant="9.5" id="diC-dm-YRZ"/>
+                            <constraint firstAttribute="trailing" secondItem="4v0-j1-xvH" secondAttribute="trailing" constant="8" id="f6q-43-6tK"/>
+                            <constraint firstItem="zOE-6N-LZe" firstAttribute="leading" secondItem="4v0-j1-xvH" secondAttribute="leading" id="fJF-pO-sJF"/>
+                            <constraint firstAttribute="trailing" secondItem="hr5-6N-3nv" secondAttribute="trailing" id="fNq-AQ-Gyg"/>
+                            <constraint firstItem="6XH-ii-LFs" firstAttribute="top" secondItem="Pc1-pJ-ZgS" secondAttribute="bottom" constant="8" id="i8K-OU-g3N"/>
+                            <constraint firstItem="4v0-j1-xvH" firstAttribute="top" secondItem="YTe-we-ypo" secondAttribute="top" constant="8" id="pFM-if-Tca"/>
+                            <constraint firstItem="Pc1-pJ-ZgS" firstAttribute="trailing" secondItem="zOE-6N-LZe" secondAttribute="trailing" id="ww3-DQ-Ymy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YTe-we-ypo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dzb-UL-ZET"/>
+                    <constraint firstAttribute="bottom" secondItem="YTe-we-ypo" secondAttribute="bottom" id="pM7-5M-4EG"/>
+                    <constraint firstAttribute="trailing" secondItem="YTe-we-ypo" secondAttribute="trailing" id="qxc-zt-HXV"/>
+                    <constraint firstItem="YTe-we-ypo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="w8n-FB-5fc"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="albumNameLabel" destination="zOE-6N-LZe" id="jja-Tu-QQm"/>
+                <outlet property="artisteName" destination="4v0-j1-xvH" id="Mnv-TN-sGX"/>
+                <outlet property="bodyTextView" destination="6XH-ii-LFs" id="hf2-DS-ZWk"/>
+                <outlet property="emailLabel" destination="Pc1-pJ-ZgS" id="Gye-rd-DPg"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="145.5"/>
         </tableViewCell>
     </objects>
 </document>

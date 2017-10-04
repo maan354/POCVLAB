@@ -1,19 +1,105 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AlbumsCells" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="134" id="KGk-i7-Jjw" customClass="AlbumsCells" customModule="POCVLAB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="43"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="133.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YBD-6Z-pzE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="134"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYP-bE-7Cn">
+                                <rect key="frame" x="8" y="16" width="229" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artiste" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5US-iH-ve5">
+                                        <rect key="frame" x="7" y="8" width="192" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kr-Na-s9o">
+                                        <rect key="frame" x="7" y="38" width="192" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pb8-za-nWj">
+                                <rect key="frame" x="9" y="103.5" width="303" height="15"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ub7-xJ-LB4">
+                                <rect key="frame" x="0.0" y="133" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="QkO-xp-S5b"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-dq-YiV">
+                                <rect key="frame" x="266" y="26" width="32" height="45"/>
+                                <state key="normal" image="sign-in" backgroundImage="sign-in"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ub7-xJ-LB4" firstAttribute="top" secondItem="pb8-za-nWj" secondAttribute="bottom" constant="14.5" id="6mz-AF-cgo"/>
+                            <constraint firstItem="pb8-za-nWj" firstAttribute="top" secondItem="lVc-dq-YiV" secondAttribute="bottom" constant="32.5" id="D9Y-Ue-Qu9"/>
+                            <constraint firstItem="pb8-za-nWj" firstAttribute="trailing" secondItem="YBD-6Z-pzE" secondAttribute="trailingMargin" id="GAf-sG-JfG"/>
+                            <constraint firstItem="lVc-dq-YiV" firstAttribute="top" secondItem="YBD-6Z-pzE" secondAttribute="top" constant="26" id="KhK-EO-Iks"/>
+                            <constraint firstItem="pb8-za-nWj" firstAttribute="centerX" secondItem="ub7-xJ-LB4" secondAttribute="centerX" id="PhP-Zd-IKE"/>
+                            <constraint firstItem="ub7-xJ-LB4" firstAttribute="leading" secondItem="YBD-6Z-pzE" secondAttribute="leading" id="Wem-QB-UNQ"/>
+                            <constraint firstItem="pb8-za-nWj" firstAttribute="top" secondItem="FYP-bE-7Cn" secondAttribute="bottom" constant="14.5" id="XLO-53-4Bb"/>
+                            <constraint firstItem="FYP-bE-7Cn" firstAttribute="top" secondItem="YBD-6Z-pzE" secondAttribute="top" constant="16" id="dbL-u2-qCb"/>
+                            <constraint firstAttribute="bottom" secondItem="ub7-xJ-LB4" secondAttribute="bottom" id="hOt-Cw-jki"/>
+                            <constraint firstItem="lVc-dq-YiV" firstAttribute="leading" secondItem="FYP-bE-7Cn" secondAttribute="trailing" constant="29" id="rNj-FT-2V9"/>
+                            <constraint firstAttribute="trailing" secondItem="lVc-dq-YiV" secondAttribute="trailing" constant="22" id="scw-hS-czA"/>
+                            <constraint firstItem="FYP-bE-7Cn" firstAttribute="leading" secondItem="YBD-6Z-pzE" secondAttribute="leading" constant="8" id="t5n-aE-6gu"/>
+                            <constraint firstItem="pb8-za-nWj" firstAttribute="centerX" secondItem="YBD-6Z-pzE" secondAttribute="centerX" id="zLR-YG-6k2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YBD-6Z-pzE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ES4-2z-056"/>
+                    <constraint firstItem="YBD-6Z-pzE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HkY-Em-s9l"/>
+                    <constraint firstAttribute="trailing" secondItem="YBD-6Z-pzE" secondAttribute="trailing" id="ZGg-Vd-CHs"/>
+                    <constraint firstItem="YBD-6Z-pzE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yAo-fq-od6"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="artiste" destination="5US-iH-ve5" id="BJ0-1X-krE"/>
+                <outlet property="getPhotoButton" destination="lVc-dq-YiV" id="pTl-4G-9go"/>
+                <outlet property="panelView" destination="FYP-bE-7Cn" id="ZSU-dk-HlU"/>
+                <outlet property="titleAlbumLabel" destination="pb8-za-nWj" id="m0S-Be-Haa"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="134"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="sign-in" width="32" height="32"/>
+    </resources>
 </document>

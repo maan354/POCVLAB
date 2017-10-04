@@ -9,6 +9,10 @@
 import UIKit
 
 class PostCell: UITableViewCell {
+    @IBOutlet weak var artisteName: UILabel!
+    @IBOutlet weak var albumNameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var bodyTextView: UITextView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

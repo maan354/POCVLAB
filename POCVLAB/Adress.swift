@@ -1,3 +1,4 @@
+
 //
 //  Adress.swift
 //  POCVLAB
@@ -7,3 +8,31 @@
 //
 
 import Foundation
+import ObjectMapper
+
+
+
+
+class Adress: NSObject, Mappable {
+
+    var street: String = ""
+    var suite: String = ""
+    var zipcode: String = ""
+    var city : String =  ""
+    
+    required init?(map: Map) {}
+    
+    override init() {
+        super.init()
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        street    <- map["street"]
+        suite    <- map["suite"]
+        zipcode    <- map["zipcode"]
+        city    <- map["city"]
+       
+    }
+}
+

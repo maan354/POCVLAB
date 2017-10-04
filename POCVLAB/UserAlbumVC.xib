@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserAlbumVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserAlbumVC" customModule="POCVLAB" customModuleProvider="target">
             <connections>
+                <outlet property="albumTV" destination="1hd-62-MVV" id="e5Y-jc-d7b"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,67 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1hd-62-MVV">
+                    <rect key="frame" x="0.0" y="89" width="375" height="578"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="578" id="aR0-wv-NlE"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJ7-TK-3m3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albums" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghc-lA-ky7">
+                            <rect key="frame" x="84" y="30" width="206" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mrq-1H-rHJ">
+                            <rect key="frame" x="0.0" y="80" width="375" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NMu-Ic-f67">
+                            <rect key="frame" x="15" y="29" width="24" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="0fP-77-zNj"/>
+                                <constraint firstAttribute="height" constant="22" id="VwL-7C-PWh"/>
+                            </constraints>
+                            <state key="normal" image="cancel (1)" backgroundImage="cancel (1)"/>
+                            <connections>
+                                <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="WQf-RG-lbZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="NMu-Ic-f67" firstAttribute="leading" secondItem="jJ7-TK-3m3" secondAttribute="leading" constant="15" id="08D-bX-YA6"/>
+                        <constraint firstItem="Mrq-1H-rHJ" firstAttribute="leading" secondItem="jJ7-TK-3m3" secondAttribute="leading" id="6AP-AL-Wn2"/>
+                        <constraint firstItem="NMu-Ic-f67" firstAttribute="top" secondItem="jJ7-TK-3m3" secondAttribute="top" constant="29" id="E1s-Ss-VWT"/>
+                        <constraint firstItem="Ghc-lA-ky7" firstAttribute="centerX" secondItem="jJ7-TK-3m3" secondAttribute="centerX" id="UwY-Zv-26h"/>
+                        <constraint firstItem="Ghc-lA-ky7" firstAttribute="centerY" secondItem="jJ7-TK-3m3" secondAttribute="centerY" id="d6g-3G-IIr"/>
+                        <constraint firstItem="Mrq-1H-rHJ" firstAttribute="top" secondItem="Ghc-lA-ky7" secondAttribute="bottom" constant="29" id="gBg-yi-fkb"/>
+                        <constraint firstItem="Ghc-lA-ky7" firstAttribute="leading" secondItem="jJ7-TK-3m3" secondAttribute="leading" constant="84" id="h0g-XN-MaO"/>
+                        <constraint firstAttribute="trailing" secondItem="Mrq-1H-rHJ" secondAttribute="trailing" id="iWh-dP-QRy"/>
+                        <constraint firstAttribute="bottom" secondItem="Mrq-1H-rHJ" secondAttribute="bottom" id="lkM-FM-aCJ"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="1hd-62-MVV" secondAttribute="bottom" id="JPD-Gq-DyN"/>
+                <constraint firstItem="1hd-62-MVV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LjK-fb-qv8"/>
+                <constraint firstItem="jJ7-TK-3m3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Nab-Az-rHq"/>
+                <constraint firstAttribute="trailing" secondItem="1hd-62-MVV" secondAttribute="trailing" id="SOE-kX-uvb"/>
+                <constraint firstAttribute="trailing" secondItem="jJ7-TK-3m3" secondAttribute="trailing" id="YE9-tX-Fp3"/>
+                <constraint firstItem="1hd-62-MVV" firstAttribute="top" secondItem="jJ7-TK-3m3" secondAttribute="bottom" constant="8" id="aXU-cI-Wtp"/>
+                <constraint firstItem="jJ7-TK-3m3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lul-Ge-rtt"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cancel (1)" width="32" height="32"/>
+    </resources>
 </document>

@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotosVC" customModule="POCVLAB" customModuleProvider="target">
             <connections>
+                <outlet property="photoTV" destination="mLZ-SD-an8" id="JeX-LW-IOs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,68 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mLZ-SD-an8">
+                    <rect key="frame" x="0.0" y="91" width="375" height="576"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="576" id="Ior-15-slI"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="042-KA-kHn">
+                    <rect key="frame" x="0.0" y="2" width="375" height="81"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqS-8K-xvh">
+                            <rect key="frame" x="84" y="30" width="206" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIO-w6-S5Z">
+                            <rect key="frame" x="0.0" y="80" width="375" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tH8-Ub-3gf">
+                            <rect key="frame" x="15" y="29" width="24" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="27y-wu-H1X"/>
+                                <constraint firstAttribute="height" constant="22" id="Nqj-4D-xwb"/>
+                            </constraints>
+                            <state key="normal" image="cancel (1)" backgroundImage="cancel (1)"/>
+                            <connections>
+                                <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="tMd-oU-eIN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="vqS-8K-xvh" firstAttribute="leading" secondItem="042-KA-kHn" secondAttribute="leading" constant="84" id="9Ic-dc-SN0"/>
+                        <constraint firstItem="vqS-8K-xvh" firstAttribute="centerY" secondItem="042-KA-kHn" secondAttribute="centerY" id="DMB-gO-ykm"/>
+                        <constraint firstAttribute="bottom" secondItem="hIO-w6-S5Z" secondAttribute="bottom" id="FZb-Lo-0Yd"/>
+                        <constraint firstItem="vqS-8K-xvh" firstAttribute="centerX" secondItem="042-KA-kHn" secondAttribute="centerX" id="N0a-US-ybO"/>
+                        <constraint firstAttribute="trailing" secondItem="hIO-w6-S5Z" secondAttribute="trailing" id="PhC-TQ-ers"/>
+                        <constraint firstItem="hIO-w6-S5Z" firstAttribute="leading" secondItem="042-KA-kHn" secondAttribute="leading" id="RQN-IA-NBe"/>
+                        <constraint firstItem="hIO-w6-S5Z" firstAttribute="top" secondItem="vqS-8K-xvh" secondAttribute="bottom" constant="29" id="UpW-Wf-wcr"/>
+                        <constraint firstItem="tH8-Ub-3gf" firstAttribute="bottom" secondItem="vqS-8K-xvh" secondAttribute="bottom" id="ZcT-1D-J5t"/>
+                        <constraint firstItem="tH8-Ub-3gf" firstAttribute="leading" secondItem="042-KA-kHn" secondAttribute="leading" constant="15" id="hsZ-P2-5Hu"/>
+                        <constraint firstItem="tH8-Ub-3gf" firstAttribute="top" secondItem="042-KA-kHn" secondAttribute="top" constant="29" id="uMd-qD-rNB"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mLZ-SD-an8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="595-vw-wPh"/>
+                <constraint firstItem="mLZ-SD-an8" firstAttribute="top" secondItem="042-KA-kHn" secondAttribute="bottom" constant="8" id="JJ3-Yo-4GJ"/>
+                <constraint firstItem="mLZ-SD-an8" firstAttribute="top" secondItem="042-KA-kHn" secondAttribute="bottom" constant="8" symbolic="YES" id="OGb-GU-HrI"/>
+                <constraint firstAttribute="trailing" secondItem="mLZ-SD-an8" secondAttribute="trailing" id="c32-nB-hPc"/>
+                <constraint firstItem="mLZ-SD-an8" firstAttribute="trailing" secondItem="042-KA-kHn" secondAttribute="trailing" id="ehf-AL-q80"/>
+                <constraint firstAttribute="bottom" secondItem="mLZ-SD-an8" secondAttribute="bottom" id="fun-lO-dXK"/>
+                <constraint firstItem="mLZ-SD-an8" firstAttribute="leading" secondItem="042-KA-kHn" secondAttribute="leading" id="hvz-wd-S19"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cancel (1)" width="32" height="32"/>
+    </resources>
 </document>

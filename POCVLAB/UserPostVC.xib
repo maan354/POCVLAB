@@ -1,12 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserPostVC" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserPostVC" customModule="POCVLAB" customModuleProvider="target">
             <connections>
+                <outlet property="postTV" destination="kTO-cM-NqG" id="txv-Bu-8zS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +19,69 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kTO-cM-NqG">
+                    <rect key="frame" x="0.0" y="89" width="375" height="578"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="578" id="Cnh-Tg-vXh"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lUG-Vy-SfD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="81"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artiste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LpF-lq-Hrc">
+                            <rect key="frame" x="84" y="30" width="206" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-aJ-5eI">
+                            <rect key="frame" x="0.0" y="82" width="375" height="2"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Dz-sW-Iu7">
+                            <rect key="frame" x="10" y="29" width="24" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="D4b-mz-buP"/>
+                                <constraint firstAttribute="width" constant="24" id="ZrA-dI-oyN"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="24" id="iWH-d2-AHy"/>
+                                <constraint firstAttribute="height" constant="22" id="pVm-aw-a7t"/>
+                            </constraints>
+                            <state key="normal" image="cancel (1)" backgroundImage="cancel (1)"/>
+                            <connections>
+                                <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="Yev-nt-4df"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="LpF-lq-Hrc" firstAttribute="centerX" secondItem="lUG-Vy-SfD" secondAttribute="centerX" id="FFt-qw-hDo"/>
+                        <constraint firstAttribute="trailing" secondItem="kFL-aJ-5eI" secondAttribute="trailing" id="HGX-Yb-9cE"/>
+                        <constraint firstItem="LpF-lq-Hrc" firstAttribute="leading" secondItem="lUG-Vy-SfD" secondAttribute="leading" constant="84" id="UnN-vH-aiz"/>
+                        <constraint firstItem="2Dz-sW-Iu7" firstAttribute="top" secondItem="lUG-Vy-SfD" secondAttribute="top" constant="29" id="gPB-1a-YtM"/>
+                        <constraint firstItem="kFL-aJ-5eI" firstAttribute="top" secondItem="lUG-Vy-SfD" secondAttribute="top" constant="82" id="iiI-pf-UHn"/>
+                        <constraint firstItem="kFL-aJ-5eI" firstAttribute="top" secondItem="LpF-lq-Hrc" secondAttribute="bottom" constant="31" id="kbs-jY-O3b"/>
+                        <constraint firstAttribute="bottom" secondItem="kFL-aJ-5eI" secondAttribute="bottom" constant="-3" id="mX1-D8-Krj"/>
+                        <constraint firstItem="kFL-aJ-5eI" firstAttribute="leading" secondItem="lUG-Vy-SfD" secondAttribute="leading" id="q71-z8-Cs6"/>
+                        <constraint firstItem="2Dz-sW-Iu7" firstAttribute="leading" secondItem="lUG-Vy-SfD" secondAttribute="leading" constant="10" id="sAo-eR-Cf6"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kTO-cM-NqG" secondAttribute="trailing" id="24j-AB-ufz"/>
+                <constraint firstItem="kTO-cM-NqG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="259-Va-FDT"/>
+                <constraint firstAttribute="trailing" secondItem="lUG-Vy-SfD" secondAttribute="trailing" id="4fl-D5-48g"/>
+                <constraint firstItem="lUG-Vy-SfD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Aea-9I-2jV"/>
+                <constraint firstItem="lUG-Vy-SfD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="THy-N5-BKN"/>
+                <constraint firstItem="kTO-cM-NqG" firstAttribute="top" secondItem="lUG-Vy-SfD" secondAttribute="bottom" constant="8" id="btb-hv-H7i"/>
+                <constraint firstAttribute="bottom" secondItem="kTO-cM-NqG" secondAttribute="bottom" id="vab-TV-ZeB"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="101.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="cancel (1)" width="32" height="32"/>
+    </resources>
 </document>
